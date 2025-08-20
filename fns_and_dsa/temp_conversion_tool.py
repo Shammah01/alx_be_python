@@ -1,6 +1,6 @@
-git add temp_conversion_tool.pygit commit -m "Add user interaction to temp_conversion_tool.py"git push origin master   # or master, depending on branch# Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+git add temp_conversion_tool.pygit commit -m "Fix conversion factor formatting"git push origin master  # or master# Global conversion factors
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius"""
@@ -12,7 +12,7 @@ def convert_to_fahrenheit(celsius):
 
 def main():
     try:
-        # 👇 Required exact prompts
+        # Required exact prompts
         temperature = float(input("Enter the temperature to convert: "))
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
